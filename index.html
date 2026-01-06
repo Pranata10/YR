@@ -33,7 +33,7 @@
             <p class="who-watching-single">Who's watching?</p>
             <div class="guest-profile single-profile active" data-guest-name="[Nama Tamu]">
                 <img src="face.jpg" alt="Ikon Profil" class="profile-icon">
-                <p class="guest-name">Anda</p>
+                <p class="guest-name"></p>
             </div>
 
             <button id="open-btn" class="outline-btn">OPEN INVITATION</button>
@@ -326,7 +326,7 @@ function setGuestNameFromURL() {
     let guestName = urlParams.get('to'); 
     
     if (!guestName) {
-        guestName = 'Anda'; 
+        guestName = ''; 
     } else {
         guestName = guestName.replace(/\+/g, ' '); 
         guestName = guestName.toLowerCase().split(' ').map((word) => {
